@@ -1,0 +1,176 @@
+.first {
+  color: #b3c44e;
+}
+.butn {
+  padding: 17px 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 10px;
+  left: 505px;
+  top: 100px;
+  text-decoration: none;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.butn:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.butn:hover {
+  border-color: #fff;
+}
+.butn:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.butn:hover span {
+  color: #b3c44e;
+}
+.butn span {
+  position: relative;
+  z-index: 2;
+}
+
+.butn-bg {
+  background: #b3c44e;
+  border-color: #b3c44e;
+  color: #fff;
+}
+
+.butn-bord:after {
+  background: #b3c44e;
+}
+.butn-bord:hover {
+  border-color: #b3c44e;
+}
+.butn-bord:hover span {
+  color: #fff;
+}
+
+.butn.round {
+  border-radius: 30px;
+}
+.butn.round:after {
+  border-radius: 30px;
+}
+/*fin des boutons annime*/
+/*annimates buttons bottom*/
+.first {
+  color: #b3c44e;
+}
+.btn-butn {
+  padding: 17px 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 10px;
+  left: 505px;
+  top: 100px;
+  text-decoration: none;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.btn-butn:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-butn:hover {
+  border-color: #fff;
+}
+.btn-butn:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.btn-butn:hover span {
+  color: #b3c44e;
+}
+.btn-butn span {
+  position: relative;
+  z-index: 2;
+}
+.btn-r{
+  position: relative;
+  top: -35px;
+}
+/*annimates buttons bottom end*/
+/*Liste de bouton*/
+.list {
+  color: #000;
+}
+.list-butn {
+  padding: 17px 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 10px;
+  left: 410px;
+  top: 100px;
+  text-decoration: none;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.list-butn:hover{
+  background: #b3c44e;
+  color: #fff;
+  box-shadow: 1px 3.5px rgba(220, 219, 219, 0.5);
+}
+.list-btn{
+  margin-top: -20px;
+  height: 180px;
+}
+/*btn pay*/
+
+.list-butn1 {
+  padding: 17px 30px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px dashed #b3c44e;
+  color: #b3c44e;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 250px;
+  left: -100px;
+  top: -60px;
+  text-decoration: none;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.list-butn1:hover{
+  background-color: #b3c44e;
+  color: #fff;
+}
+.list-btn1{
+  margin-top: -20px;
+  height: 180px;
+}

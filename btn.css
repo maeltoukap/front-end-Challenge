@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.ul-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.ul-btn li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background: #dfdfdf;
+    border-radius: 50%;
+    transition: .5s;
+    margin-top: 750px;
+}
+
+.ul-btn li:hover{
+    background: #0070ff;
+}
+
+.ul-btn li span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 4px solid #fff;
+    transition: .5s;
+}
+
+.ul-btn li span{
+    top: 97%;
+    left: 38%;
+    transform: translateY(-50%) rotate(45deg);
+    border-left: none;
+    border-top: none;
+}
+
+.ul-btn li:hover span{
+    top: 785px;
+}

@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*label de 90%*/
+.stats .stats-head {
+    list-style: none;
+    position: absolute;
+    top: 1180px;
+    left: 300px;
+    transform: translate(-50%,-50%);
+}
+
+.stats-head li.stats-child{
+    list-style: none;
+    width: 517px;
+    height: 3px;
+    background: #dfdfdf;
+    transition: .5s;
+}
+
+.stats-head li.stats-child2{
+    position: absolute;
+    list-style: none;
+    width: 460px;
+    height: 3px;
+    background: #8edb2a;
+    transition: .5s;
+    top: 0px;
+}
+/*label de 75%*/
+.stats-stats .stats-head-head {
+    list-style: none;
+    position: absolute;
+    top: 1230px;
+    left: 300px;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.stats-head-head li.stats-child-child{
+    list-style: none;
+    width: 517px;
+    height: 3px;
+    background: #dfdfdf;
+    transition: .5s;
+}
+
+.stats-head-head li.stats-child-child2{
+    position: absolute;
+    list-style: none;
+    width: 400px;
+    height: 3px;
+    background: #8edb2a;
+    transition: .5s;
+    top: 0px;
+}
+
+/*label de 80%*/
+.stats-stats-stats .stats-head-head-head {
+    list-style: none;
+    position: absolute;
+    top: 1280px;
+    left: 298px;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.stats-head-head-head li.stats-child-child-child{
+    list-style: none;
+    width: 517px;
+    height: 3px;
+    background: #dfdfdf;
+    transition: .5s;
+}
+
+.stats-head-head-head li.stats-child-child-child2{
+    position: absolute;
+    list-style: none;
+    width: 430px;
+    height: 3px;
+    background: #8edb2a;
+    transition: .5s;
+    top: 0px;
+}
+/*Les textes du menu*/
+.mention, .percents{
+    display: flex;
+    position: relative;
+    display: flexbox;
+    top: 40px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.percents{
+    left: 486px;
+    top: 15px;
+}

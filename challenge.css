@@ -1,0 +1,607 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(/images/A1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.head-menu {
+    margin-top: 20px;
+    margin-left: 850px;
+}
+
+.head-form {
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+}
+
+
+.head-form:hover {
+    /*color: rgb(162, 218, 51);*/
+    color: #b3c54f;
+}
+
+.my-h {
+    margin-top: 250px;
+    text-align: center;
+}
+h2 span {
+    color: rgb(162, 218, 51);
+    background-color: rgb(255, 251, 247);
+}
+
+.second-paragraph {
+    color: white;
+}
+
+.p1 {
+    position: relative;
+    text-align: center;
+    top: 370px;
+    color: white;
+}
+
+/*les boutons learn more et get started*/
+div .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+}
+.btn a{
+    margin-top: 30px;
+    margin-left: 500px;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+}
+.container .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    /*position: relative;
+    width: 155px;
+    height: 50px;
+    right: 60px;
+    top: 60px;
+    margin-left: 10px;*/
+}
+.container .btn a{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .btn:hover a{
+    letter-spacing: 2px;
+}
+.container .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100px;
+    
+    transform: skewX(0deg) translateX(0);
+    transition: 0.8s;
+}
+.container .btn:hover a::before{
+    transform: skewX(0deg) translateX(200%);
+}
+/*fin des premiers bouton*/
+/*le premier texte apres les boutons*/
+.first-text{
+    font-size: x-large;
+}
+
+.text-up{
+    text-align: center;
+    margin-top: 350px;
+}
+
+.laptop{
+    margin-left: 700px;
+    margin-top: -220px;
+    width: 600px;
+    height: auto;
+}
+
+img{
+    height: 95%;
+    width: 95%;
+}
+/*flexbox*/
+.flex{
+    display: flex;
+    background-color: rgb(224, 222, 222);
+}
+.flexbox{
+    border-radius: 3px;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: 20px;
+    padding: 50px;
+    transition: all 0.3 cubic-bezier(.25,.8,.25,1);
+    /*justify-content: center;*/
+}
+.flexbox:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.fa{
+    color: rgb(150, 201, 47);
+}
+.flex-content, .flex-content2{
+    text-align: center;
+}
+.flex-content{
+    font-weight: bold;
+}
+
+/*la video*/
+.this-video{
+    margin-left: 0;
+}
+/*Barre de solignement centre*/
+.barre-content {
+    margin-bottom: 80px;
+    margin-right: 700px;
+}
+.barre-content h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: .7;
+    position: relative;
+    margin-bottom: 15px;
+}
+.barre-content h6 {
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    word-spacing: 1px;
+    display: inline-block;
+    padding: 0 15px;
+}
+.barre-content h6:before, .barre-content h6:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #b3c44e;
+    position: absolute;
+    bottom: 3px;
+}
+.barre-content h6:before {
+    left: -50px;
+}
+.barre-content h6:after {
+    right: -50px;
+}
+.barre{
+    position: relative;
+    left: 350px;
+    text-align: center;
+}
+/*Barre de solignement centre2 fin*/ 
+/*portefolio*/
+.portefolio{
+    height: 1000px;
+    /*border: 2px dashed rgb(221, 12, 12);*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 465px 0px 325px;
+}
+.portefolio img {
+    border: 2px #fff;
+    width: 444px;
+    height: auto;
+}
+.img2, .img4, .img7 {
+    grid-column: 2;
+}
+.img1, .img5{
+    grid-column: 1;
+}
+.img3, .img6{
+    grid-column: 3;
+}
+.img4, .img7{
+    position: relative;
+    top: -160px;
+}
+/*seconde flexbox*/
+.section-barre{
+    background-color: #e0dede;
+}
+.flex2{
+    /*border: 2px dashed rgb(221, 12, 12);*/
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    grid-template-rows: auto auto;
+}
+.flex2 :nth-child(4),
+.flex2 :nth-child(5),
+.flex2 :nth-child(6){
+    position: relative;
+    top: -20px;
+}
+.flex2 span{
+    position: relative;
+    left: 35px;
+}
+.barre-content{
+    position: relative;
+    padding-top: 50px;
+}
+.section-barre .flex-content, .flex-content2{
+    text-align: left;
+}
+.section-barre {
+    padding-bottom: 50px;
+}
+/*seconde flexbox fin*/
+/*cercles d'images et contenu*/
+.circle_p{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    right: 60px;
+}
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 138px;
+    top: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 5px solid #fff;
+}
+.circle-img1{
+    background: url(/images/1\(1\).jpg);
+    background-size: cover;
+}
+.circle-img2{
+    background: url(/images/2\(1\).jpg);
+    background-size: cover;
+}
+.circle-img3{
+    background: url(/images/3\(1\).jpg);
+    background-size: cover;
+}
+.circle-img4{
+    background: url(/images/4\(1\).jpg);
+    background-size: cover;
+}
+.img_paragraphe{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: 135px;
+    top: 20px;
+}
+.the_post{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: 125px;
+    opacity: 70%;
+}
+.networks{
+    color: #000;
+}
+.social_media{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: 151px;
+}
+.cover-circle{
+    height: 700px;
+}
+/*cercles d'images et contenu fin*/
+
+/*l'image horizontale et son contenu*/
+.horizontal_img{
+    background-image: url(/images/A2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content{
+    position: relative;
+    top: -150px;
+}
+.head-phrase2{
+    font-size: 18px;
+    text-align: center;
+}
+.second-title{
+    font-size: 55px;
+    position: relative;
+    top:-60px;
+}
+.form-title{
+    font-size: 14px;
+    position: relative;
+    top:-60px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color: #fff;
+}
+/*l'image horizontale et son contenu end*/
+/*testimonials content*/
+.img-testimonails{
+    width: 8%;
+    height: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.img-testimonails{
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+/*testimonails end*/
+/*Evanto images*/
+.evanto img{
+    width: 200px;
+    height: auto;
+    background-repeat: repeat;
+    padding-right: 45px;
+    transform: translateX(90px);
+}
+.evanto{
+    background-color: #ddd;
+}
+/* Evanto images end*/
+/*images icons*/
+.img-icons{
+    position: relative;
+    background-image: url(/images/A2.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+.img-icons p{
+    color: #fff;
+}
+.icons, .icons-parag, .circle_cont{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    transform: translate(20px, 150px);
+}
+.circle2{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    left: 132.5px;
+    top: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, .5);
+}
+.number-icons{
+    font-size: 30px;
+}
+.text-icons{
+    transform: translateY(-30px);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+/*images icons*/
+/*before flex*/
+.flex3{
+    margin-bottom: 150px;
+}
+.before-flex p{
+    text-align: center;
+}
+.before-flex span{
+    height: 500px;
+}
+/*last flexbox*/
+.flexbox-last{
+    height: 500px;
+}
+.flexbox-last p{
+    text-align: left;
+}
+.flexbox-last img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    right: 50px;
+    top: -50px;
+} 
+.flexbox-last hr{
+    margin-top: 60px;
+}
+.list3{
+    content: '';
+    padding: 9px 15px;
+    border-radius: 30px;
+    background-size: cover;
+    background-color: #b3c44e;
+    font-size: 12px;
+}
+.grid-btn{
+    position: relative;
+    left: 50px;
+    transform: translateY(-460px);
+    display: grid;
+    grid-template-columns: 420px 420px 400px;
+}
+.grid-btn a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.circle3{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    top: -373px;
+    left: 21.5px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #bababa;
+}
+.circle3-top{
+    display: grid;
+    grid-template-columns: 420px 420px 500px;
+    transform: translate(-40px, 95px);
+}
+.icons-bottom-middle{
+    display: grid;
+    grid-template-columns: 420px 420px 500px;
+    transform: translate(-430px, -240px);
+}
+.circle3-top .circle3, .circle31{
+    background-color: #b3c44e;
+}
+.circle31{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: -373px;
+    left: 21.5px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.circle3-bottom{
+    display: grid;
+    grid-template-columns: 420px 420px 100px;
+    transform: translate(180px, 140px);
+}
+/*last flexbox end*/
+/*contact*/
+.contacts{
+    position: relative;
+    left: 90px;
+    top: -90px;
+}
+.icons-contacts{
+    display: grid;
+    grid-template-rows: 120px 120px;
+    position: relative;
+    top: 95px;
+}
+.contacts-para{
+    position: relative;
+    top: -190px;
+    left: 70px;
+}
+.content-cont{
+    top: -1px;
+}
+.contacts-para .content-bottom{
+    margin-bottom:50px;
+}
+.icons-contacts2{
+    position: relative;
+    top: -190px;
+    left: 50px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+}
+.circle3{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    top: -343px;
+    left: 21.5px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #bababa;
+}
+.circle_cont2{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    transform: translate(20px, 180px);
+}
+.icons-contacts2 .fa{
+    color: #000;
+}
+/*Aside de type formulary*/
+.formulary{
+    transform: translate(700px, -650px);
+}
+.child1{
+    width: 307px;
+    height: 40px;
+    size: 2px;
+}
+.child2{
+    display: flex;
+    width: 617px;
+    height: 40px;
+}
+.formulay-content input{
+    margin-bottom: 10px;
+}
+.formulary .child-btn{
+    width: 150px;
+    position: relative;
+    top: 70px;
+    right: 400px;
+    color: #fff;
+    background-color: #b3c44e;
+    border: 0;
+    border-radius: 3px;
+}
+footer{
+    margin-top: -500px;
+    height: 270px;
+    width: auto;
+    background-image: url(/images/logo-light.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position-x: center;
+    background-position-y: 80px;
+    background-color: #000;
+    text-align: center;
+}
+footer .fa{
+    position: relative;
+    top: 180px;
+    color: #fff;
+    opacity: .3;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns:  70px 70px 70px 70px 70px;
+    position: relative;
+    margin-left: 490px;
+    margin-bottom: 20px;
+}

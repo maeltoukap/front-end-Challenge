@@ -1,0 +1,77 @@
+/* Component Needs */
+
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  top: 30px;
+}
+
+/* Visual Styles */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pc-tab { 
+  height: 200px;
+  width: 100%;
+  max-width: 700px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pc-tab li label {
+  float: left;
+  padding: 15px 60px;
+  /*border: 1px solid #ddd;*/
+  border-bottom: 0px;
+  color: #444;
+}
+
+section {
+  clear: both;
+}
+
+/*bottom box*/
+/* Component Needs */
+
+.pc-tab1 section > div {
+  display: none;
+}
+
+#tab11:checked ~ section .tab11,
+#tab21:checked ~ section .tab21,
+#tab31:checked ~ section .tab31 {
+  display: block;
+}
+
+/* Visual Styles */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pc-tab1 input {
+  position: relative;
+  top: 280px;
+  transform: translateX(-7px);
+}
+.pc-tab1 { 
+  height: 370px;
+  text-align: center;
+}
